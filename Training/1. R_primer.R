@@ -1,5 +1,5 @@
 ##INTRODUCTION TO R####
-##JSG, 7/2/22
+##student, 7/2/22
 
 #this is a broad introduction to how R works and what it can do
 #we'll return to individual topics in later sessions (both theory and practice)
@@ -248,7 +248,8 @@ file
 
 #which is then read by the read.csv function
 
-my_dataset <- read.csv(file, stringsAsFactors = T)
+my_dataset <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVLNkQ0nd2DU0nyOlCNzreB1elKm-i4T83H5E7WtGz-ta5aBmEcBww4MSSuz4lCk_Dc3c1Dyz_2EG/pub?gid=0&single=true&output=csv", stringsAsFactors = T)
+loaded_data <- read.csv("Training/example_data.csv", stringsAsFactors = T)
 
 # Since ~2020 you need to as StringsAsFactors = T to read in characters as factors
 # (what we typically want)
